@@ -18,31 +18,31 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="7gn-24-bxb">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="94" translatesAutoresizingMaskIntoConstraints="NO" id="f40-Cu-Rqe">
-                                <rect key="frame" x="102.66666666666669" y="213.00000000000003" width="170" height="361.66666666666669"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="COB-14-xxt">
+                                <rect key="frame" x="102.66666666666669" y="284.66666666666669" width="170" height="243.00000000000006"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rollin'" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Nx-RE-UxP">
-                                        <rect key="frame" x="29.333333333333329" y="0.0" width="110.99999999999999" height="52.666666666666664"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rollin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMQ-Kp-gyq">
+                                        <rect key="frame" x="49.666666666666679" y="0.0" width="70.333333333333314" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Uch-JM-yiP">
-                                        <rect key="frame" x="0.0" y="146.66666666666666" width="170" height="75"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cOe-Vp-jDp">
+                                        <rect key="frame" x="0.0" y="72" width="170" height="75"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice-1" translatesAutoresizingMaskIntoConstraints="NO" id="DLv-8g-6zO">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice-1" translatesAutoresizingMaskIntoConstraints="NO" id="jie-kr-VCx">
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice-2" translatesAutoresizingMaskIntoConstraints="NO" id="t4a-Bb-4gr">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice-2" translatesAutoresizingMaskIntoConstraints="NO" id="TRq-MX-5O1">
                                                 <rect key="frame" x="95" y="0.0" width="75" height="75"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCk-Lp-nuI">
-                                        <rect key="frame" x="50.333333333333329" y="315.66666666666669" width="69" height="46"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                        <state key="normal" title="ROLL">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4q-Zc-bIv">
+                                        <rect key="frame" x="52.999999999999986" y="183" width="64" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="Roll">
+                                            <color key="titleColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                 </subviews>
@@ -50,11 +50,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="7gn-24-bxb" secondAttribute="bottom" id="4mW-35-XKb"/>
-                            <constraint firstAttribute="trailing" secondItem="7gn-24-bxb" secondAttribute="trailing" id="89z-hr-zN3"/>
-                            <constraint firstItem="7gn-24-bxb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CUe-iP-7RH"/>
-                            <constraint firstItem="f40-Cu-Rqe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lwE-8l-6V0"/>
-                            <constraint firstItem="7gn-24-bxb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sIU-U0-Jyz"/>
+                            <constraint firstItem="COB-14-xxt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="437-91-wpt"/>
+                            <constraint firstAttribute="bottom" secondItem="7gn-24-bxb" secondAttribute="bottom" id="Fkw-HP-ueV"/>
+                            <constraint firstItem="7gn-24-bxb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="G89-oS-EvX"/>
+                            <constraint firstAttribute="trailing" secondItem="7gn-24-bxb" secondAttribute="trailing" id="Rk0-n5-KuD"/>
+                            <constraint firstItem="COB-14-xxt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iZF-KR-o3H"/>
+                            <constraint firstItem="7gn-24-bxb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="k3r-Z6-HtS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
