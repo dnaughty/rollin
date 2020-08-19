@@ -11,14 +11,18 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    @IBOutlet weak var dice_1: UIImageView!
     
-
+    @IBOutlet weak var dice_2: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
     
+    @IBAction func button_pressed(_ sender: Any) {
+    }
     
 }
 
