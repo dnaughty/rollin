@@ -27,11 +27,16 @@ class ViewController: UIViewController {
    
     @IBAction func buttonTapped(_ sender: Any) {
         
-        label.text = "Hello Dice"
+       let numberOne = arc4random_uniform(6)
++ 1
+         let numberTwo = arc4random_uniform(6)
+        + 1
         
-        leftImageView.image = UIImage(named: "dice-6")
+        label.text = "The sum is \(numberOne + numberTwo)"
         
-        rightImageView.image = UIImage(named:"dice-6")
+        leftImageView.image = UIImage(named: "dice-\numberOne)")
+        
+        rightImageView.image = UIImage(named:"dice-\numberTwo)")
         
         
     }
