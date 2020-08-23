@@ -11,9 +11,12 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    @IBOutlet weak var dice_1: UIImageView!
+    @IBOutlet weak var label: UILabel!
     
-    @IBOutlet weak var dice_2: UIImageView!
+    @IBOutlet weak var rightImageView: UIImageView!
+    
+    @IBOutlet weak var leftImageView: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +24,16 @@ class ViewController: UIViewController {
     }
 
     
-    @IBAction func button_pressed(_ sender: Any) {
+   
+    @IBAction func buttonTapped(_ sender: Any) {
+        
+        label.text = "Hello Dice"
+        
+        leftImageView.image = UIImage(named: "dice-6")
+        
+        rightImageView.image = UIImage(named:"dice-6")
+        
+        
     }
     
 }
